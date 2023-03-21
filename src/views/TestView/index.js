@@ -1,3 +1,3 @@
-import TestView from './TestView.jsx'
+import TestView from './TestView.js'
 
 export default TestView

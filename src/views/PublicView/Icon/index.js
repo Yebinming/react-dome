@@ -1,3 +1,3 @@
-import IconView from './IconView.jsx'
+import IconView from './IconView.js'
 
 export default IconView

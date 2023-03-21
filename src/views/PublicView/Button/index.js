@@ -1,3 +1,3 @@
-import ButtonView from './ButtonView.jsx'
+import ButtonView from './ButtonView.js'
 
 export default ButtonView
