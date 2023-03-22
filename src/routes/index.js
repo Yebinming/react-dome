@@ -27,6 +27,10 @@ const AnimationView = loadable(() => import(/* webpackChunkName: 'animation' */ 
 const EditorView = loadable(() => import(/* webpackChunkName: 'editor' */ '@/views/Others/Editor'))
 const UploadView = loadable(() => import(/* webpackChunkName: 'upload' */ '@/views/Others/Upload'))
 
+// 测试
+const TestIndex = loadable(() => import(/* webpackChunkName: 'button' */ '@/views/Test/list'))
+const TestDetail = loadable(() => import(/* webpackChunkName: 'icon' */ '@/views/Test/detail'))
+
 const Three = loadable(() => import(/* webpackChunkName: 'three' */ '@/views/TestView'))
 const About = loadable(() => import(/* webpackChunkName: 'about' */ '@/views/About'))
 
@@ -48,6 +52,8 @@ const routes = [
     { path: '/others/editor', exact: false, name: '富文本', component: EditorView, auth: [1] },
     { path: '/others/upload', exact: false, name: '上传', component: UploadView, auth: [1] },
     { path: '/one/two/three', exact: false, name: '三级', component: Three },
+    { path: '/test/list', exact: false, name: '列表', component: TestIndex, auth: [1] },
+    { path: '/test/detail', exact: false, name: '详情', component: TestDetail, auth: [1] },
     { path: '/about', exact: false, name: '关于', component: About, auth: [1] }
 ]
 

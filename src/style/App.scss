@@ -25,7 +25,17 @@
     border-radius: 5px;
     box-shadow: 0 2px 13px 0 rgba(228, 228, 228, 0.6);
 }
-
+.left {
+    display: flex;
+    align-items: center;
+    i {
+        margin-right: 20px;
+    }
+    .titTab {
+        line-height: 14px;
+        height: 20px;
+    }
+}
 // @font-face {
 //     font-family: 'webfont';
 //     font-display: swap;

@@ -10,7 +10,10 @@ const menu = [
         key: '/public',
         icon: 'appstore',
         auth: [1],
-        subs: [{ title: '按钮', key: '/public/button', icon: '' }, { title: '图标', key: '/public/icon', icon: '' }]
+        subs: [
+            { title: '按钮', key: '/public/button', icon: '' },
+            { title: '图标', key: '/public/icon', icon: '' }
+        ]
     },
     {
         title: '导航',
@@ -67,6 +70,16 @@ const menu = [
                 icon: '',
                 subs: [{ title: '三级', key: '/one/two/three', icon: '' }]
             }
+        ]
+    },
+    {
+        title: '测试',
+        key: '/test',
+        icon: 'appstore',
+        auth: [1],
+        subs: [
+            { title: '列表', key: '/test/list', icon: '' },
+            { title: '详情', key: '/test/detail', icon: '' }
         ]
     },
     {

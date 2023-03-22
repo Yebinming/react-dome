@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Menu, Dropdown, Icon, Layout, Avatar, Badge } from 'antd'
+import CustomBreadcrumb from '@/components/CustomBreadcrumb'
+import { color } from 'echarts/lib/theme/light'
 
 const { Header } = Layout
 
@@ -35,6 +37,10 @@ const AppHeader = props => {
                     onClick={menuClick}
                     type={menuToggle ? 'menu-unfold' : 'menu-fold'}
                 />
+                <div className='titTab'>
+                    {' '}
+                    <CustomBreadcrumb></CustomBreadcrumb>
+                </div>
             </div>
             <div className='right'>
                 <div className='mr15'>
