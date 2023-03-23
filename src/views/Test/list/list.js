@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import { Tooltip, Icon, Table, Tag, Popconfirm, message } from 'antd'
+import { Tooltip, Icon, Table, Tag, Popconfirm, message, Button } from 'antd'
+import '@/style/view-style/test.scss'
+
 class TestIndex extends Component {
     constructor(props) {
         super(props)
@@ -9,7 +11,6 @@ class TestIndex extends Component {
         message.info('Clicked on Yes.')
     }
     render() {
-        const description = 'description'
         const columns = [
             {
                 title: 'Name',
@@ -65,11 +66,10 @@ class TestIndex extends Component {
                         <Tooltip title='Delete'>
                             <Popconfirm
                                 placement='top'
-                                title={'提示'}
-                                description={'description'}
+                                title={'确定要执行此操作吗？'}
                                 onConfirm={this.confirm}
-                                okText='Yes'
-                                cancelText='No'>
+                                okText='是'
+                                cancelText='否'>
                                 <Icon type='delete' />
                             </Popconfirm>
                         </Tooltip>
@@ -105,8 +105,16 @@ class TestIndex extends Component {
             }
         ]
         return (
-            <div className='base-style'>
-                <Table columns={columns} dataSource={data} />
+            <div className='main-body'>
+                <div className='bese-header'>
+                    测试列表
+                    <Button type='primary' size={'size'}>
+                        新增
+                    </Button>
+                </div>
+                <div className='base-style'>
+                    <Table columns={columns} dataSource={data} />
+                </div>
             </div>
         )
     }

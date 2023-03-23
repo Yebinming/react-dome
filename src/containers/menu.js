@@ -19,6 +19,7 @@ const menu = [
         title: '导航',
         key: '/nav',
         icon: 'bulb',
+        auth: [1],
         subs: [
             { title: '下拉菜单', key: '/nav/dropdown', icon: '' },
             { title: '导航菜单', key: '/nav/menu', icon: '' },
@@ -29,15 +30,17 @@ const menu = [
         title: '表单',
         key: '/form',
         icon: 'form',
+        auth: [1],
         subs: [
             { title: '基础表单', key: '/form/base-form', icon: '' },
-            { title: '步骤表单', key: '/form/step-form', icon: '' }
+            { title: '步骤表单', key: '/form/step-form', icon: '', auth: [1] }
         ]
     },
     {
         title: '展示',
         key: '/show',
         icon: 'pie-chart',
+        auth: [1],
         subs: [
             { title: '表格', key: '/show/table', icon: '' },
             { title: '折叠面板', key: '/show/collapse', icon: '' },
@@ -63,6 +66,7 @@ const menu = [
         title: '多级导航',
         key: '/one',
         icon: 'bars',
+        auth: [1],
         subs: [
             {
                 title: '二级',

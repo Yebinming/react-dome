@@ -287,7 +287,7 @@ class FromView extends Component {
                                                 validator: this.compareToFirstPassword
                                             }
                                         ]
-                                    })(<Input.Password onBlur={this.handleConfirmBlur} placeholder='请确认密码' />)}
+                                    })(<Input.Password placeholder='请确认密码' />)}
                                 </Form.Item>
                                 <Form.Item label='家庭住址'>
                                     {getFieldDecorator('adress', {
